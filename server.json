@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Go7hic/favicon-so",
+  "title": "Favicon.so",
+  "description": "MCP server for Favicon.so - fetch favicons for any website and generate custom favicon assets.",
+  "repository": {
+    "url": "https://github.com/Go7hic/favicon-mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "favicon-mcp-server",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

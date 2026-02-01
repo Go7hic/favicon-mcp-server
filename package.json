@@ -1,0 +1,42 @@
+{
+  "name": "favicon-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Favicon.so - fetch favicons and generate favicon assets",
+  "type": "module",
+  "mcpName": "io.github.Go7hic/favicon-so",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Go7hic/favicon-mcp-server.git"
+  },
+  "homepage": "https://github.com/Go7hic/favicon-mcp-server#readme",
+  "bugs": "https://github.com/Go7hic/favicon-mcp-server/issues",
+  "bin": {
+    "favicon-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "watch": "tsc --watch",
+    "start": "node build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "favicon",
+    "model-context-protocol"
+  ],
+  "license": "MIT"
+}
