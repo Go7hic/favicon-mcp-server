@@ -13,8 +13,8 @@
 /.next/
 /out/
 
-# production
-/build
+# production (build/ is committed for git-based installs)
+# /build
 
 # misc
 .DS_Store
